@@ -1,0 +1,375 @@
+[
+ {
+  "file": "VillaSavoye_BIMCraft.ifc",
+  "schema": "IFC4",
+  "mvd": "ViewDefinition [DesignTransferView]",
+  "app": "BIMCraft 0.8.0",
+  "counts": {
+   "IfcWall": 43,
+   "IfcSlab": 10,
+   "IfcColumn": 34,
+   "IfcBeam": 0,
+   "IfcDoor": 19,
+   "IfcWindow": 11,
+   "IfcSpace": 16,
+   "IfcStair": 2,
+   "IfcStairFlight": 6,
+   "IfcRamp": 4,
+   "IfcRampFlight": 4,
+   "IfcRailing": 14,
+   "IfcRoof": 0,
+   "IfcCovering": 0,
+   "IfcCurtainWall": 0,
+   "IfcPlate": 0,
+   "IfcMember": 0,
+   "IfcFooting": 0,
+   "IfcBuildingElementProxy": 0,
+   "IfcOpeningElement": 30,
+   "IfcGrid": 0,
+   "IfcBuildingStorey": 7
+  },
+  "slab_types": {
+   "IfcSlab:FLOOR": 6,
+   "IfcSlab:LANDING": 4
+  },
+  "storeys": [
+   [
+    "Ground",
+    0
+   ],
+   [
+    "Ground Floor",
+    150
+   ],
+   [
+    "Ramp Landing +1800",
+    1800
+   ],
+   [
+    "First Floor",
+    3450
+   ],
+   [
+    "Ramp Landing +5100",
+    5100
+   ],
+   [
+    "Roof Terrace",
+    6750
+   ],
+   [
+    "Solarium Top",
+    9450
+   ]
+  ],
+  "elements": 147,
+  "not_contained": 0,
+  "with_material": 28,
+  "with_type": 0,
+  "with_qto": 0,
+  "with_common_pset": 0,
+  "geom_ok": 139,
+  "geom_fail": 2,
+  "bbox_mm": [
+   0,
+   19200,
+   0,
+   21500,
+   0,
+   9550
+  ],
+  "cols_gf": [
+   23,
+   23,
+   0.2
+  ],
+  "cols_ff": [
+   11,
+   11,
+   0.2
+  ],
+  "col_diam": [
+   190
+  ],
+  "spaces": [
+   [
+    "Entrance Hall",
+    null
+   ],
+   [
+    "Garage",
+    null
+   ],
+   [
+    "Laundry",
+    null
+   ],
+   [
+    "Servants' Room",
+    null
+   ],
+   [
+    "Living Room",
+    null
+   ],
+   [
+    "Kitchen",
+    null
+   ],
+   [
+    "Pantry",
+    null
+   ],
+   [
+    "Guest Bedroom",
+    null
+   ],
+   [
+    "Bathroom 1",
+    null
+   ],
+   [
+    "Son's Bedroom",
+    null
+   ],
+   [
+    "Bathroom 2",
+    null
+   ],
+   [
+    "Hall and Ramp",
+    null
+   ],
+   [
+    "Master Bathroom",
+    null
+   ],
+   [
+    "Master Bedroom",
+    null
+   ],
+   [
+    "Roof Garden (Terrace)",
+    null
+   ],
+   [
+    "Stair Tower",
+    null
+   ]
+  ],
+  "grid_axes": [],
+  "schema_errors": 2,
+  "schema_error_samples": [
+   "With attribute:\n    <attribute Items: <set [1:?] of <entity IfcRepresentationItem>>>\nValue:\n    ()\nNot valid\n"
+  ]
+ },
+ {
+  "file": "VillaSavoye_Revit.ifc",
+  "schema": "IFC4",
+  "mvd": "ViewDefinition [DesignTransferView_V1.0]",
+  "app": "Autodesk - Revit 26.5.0.55 (ENG) - 26.5.0.55",
+  "counts": {
+   "IfcWall": 40,
+   "IfcSlab": 10,
+   "IfcColumn": 34,
+   "IfcBeam": 0,
+   "IfcDoor": 19,
+   "IfcWindow": 9,
+   "IfcSpace": 17,
+   "IfcStair": 2,
+   "IfcStairFlight": 6,
+   "IfcRamp": 0,
+   "IfcRampFlight": 4,
+   "IfcRailing": 22,
+   "IfcRoof": 0,
+   "IfcCovering": 0,
+   "IfcCurtainWall": 6,
+   "IfcPlate": 24,
+   "IfcMember": 78,
+   "IfcFooting": 0,
+   "IfcBuildingElementProxy": 0,
+   "IfcOpeningElement": 35,
+   "IfcGrid": 5,
+   "IfcBuildingStorey": 5
+  },
+  "slab_types": {
+   "IfcSlab:BASESLAB": 4,
+   "IfcSlab:LANDING": 6
+  },
+  "storeys": [
+   [
+    "Ground",
+    0
+   ],
+   [
+    "Ground Floor",
+    150
+   ],
+   [
+    "First Floor",
+    3450
+   ],
+   [
+    "Roof Terrace",
+    6750
+   ],
+   [
+    "Solarium Top",
+    9450
+   ]
+  ],
+  "elements": 254,
+  "not_contained": 0,
+  "with_material": 212,
+  "with_type": 254,
+  "with_qto": 252,
+  "with_common_pset": 254,
+  "geom_ok": 246,
+  "geom_fail": 0,
+  "bbox_mm": [
+   -25,
+   19225,
+   -25,
+   21538,
+   -54,
+   9550
+  ],
+  "cols_gf": [
+   23,
+   23,
+   0.2
+  ],
+  "cols_ff": [
+   11,
+   11,
+   0.2
+  ],
+  "col_diam": [
+   190
+  ],
+  "spaces": [
+   [
+    "Entrance Hall",
+    114.8
+   ],
+   [
+    "Garage",
+    43.0
+   ],
+   [
+    "Chauffeur's Room",
+    19.0
+   ],
+   [
+    "Laundry",
+    18.8
+   ],
+   [
+    "Kitchen",
+    26.5
+   ],
+   [
+    "Pantry",
+    28.7
+   ],
+   [
+    "Living Room",
+    56.4
+   ],
+   [
+    "Guest Bedroom",
+    30.2
+   ],
+   [
+    "Bathroom 1",
+    12.6
+   ],
+   [
+    "Hall and Ramp",
+    60.3
+   ],
+   [
+    "Master Bedroom",
+    33.1
+   ],
+   [
+    "Bathroom 2",
+    12.7
+   ],
+   [
+    "Dressing",
+    7.3
+   ],
+   [
+    "Bedroom 2",
+    29.1
+   ],
+   [
+    "Bathroom 3",
+    16.8
+   ],
+   [
+    "Roof Garden (Terrace)",
+    74.6
+   ],
+   [
+    "Solarium (Roof Terrace)",
+    296.2
+   ]
+  ],
+  "grid_axes": [
+   "1",
+   "1",
+   "1",
+   "1",
+   "1",
+   "2",
+   "2",
+   "2",
+   "2",
+   "2",
+   "3",
+   "3",
+   "3",
+   "3",
+   "3",
+   "4",
+   "4",
+   "4",
+   "4",
+   "4",
+   "5",
+   "5",
+   "5",
+   "5",
+   "5",
+   "A",
+   "A",
+   "A",
+   "A",
+   "A",
+   "B",
+   "B",
+   "B",
+   "B",
+   "B",
+   "C",
+   "C",
+   "C",
+   "C",
+   "C",
+   "D",
+   "D",
+   "D",
+   "D",
+   "D",
+   "E",
+   "E",
+   "E",
+   "E",
+   "E"
+  ],
+  "schema_errors": 0,
+  "schema_error_samples": []
+ }
+]

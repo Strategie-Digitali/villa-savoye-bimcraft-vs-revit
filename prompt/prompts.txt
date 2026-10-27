@@ -1,0 +1,120 @@
+VILLA SAVOYE - BIMCraft vs Revit head-to-head test
+Prompts to paste, in order. Same model, same effort, fresh session for each run.
+Before each run: enable ONLY the MCP of the tool under test (disable the other one, Rhino and FreeCAD).
+Revit: open an empty project from the metric architectural template with an A0 title block family already loaded.
+BIMCraft: open an empty new project in the window.
+
+================================================================
+RUN A - BIMCraft
+================================================================
+
+--- Message 1 ---
+Are you connected to BIMCraft? Answer only yes or no.
+
+--- Message 2 ---
+(paste the COMMON MESSAGE 2 below)
+
+================================================================
+RUN B - Revit
+================================================================
+
+--- Message 1 ---
+Are you connected to Revit? Answer only yes or no.
+
+--- Message 2 ---
+(paste the COMMON MESSAGE 2 below)
+
+================================================================
+COMMON MESSAGE 2 (identical for both runs)
+================================================================
+
+Goal: model Villa Savoye (Le Corbusier, 1931) as a BIM model and produce its drawings, using ONLY the BIM application tools connected in this session.
+
+RULES
+- Work autonomously: do not ask questions. Where the data sheet is not enough, make a reasonable assumption, apply it and note it down.
+- Units are mm. Use the coordinates of the data sheet exactly as given.
+- Everything is based on the grids: columns on grid intersections (or at the off-grid points listed), walls and slabs referenced to the grid lines.
+- At the end of each phase, check your work (query the model and look at a render or a screenshot) and fix it before moving on.
+- If a deliverable cannot be achieved with the available tools, say so and move on: no shortcuts outside the BIM application (for example, do not draw the sheet as an image instead of using real views).
+
+DATA SHEET
+Units mm. Side y=0 is the entrance front (ground-floor curved glazing); x increases to the right when facing the entrance.
+
+1. Grids
+- Square 5x5 grid, spacing 4750.
+- Numbered grids along X: 1 x=100, 2 x=4850, 3 x=9600, 4 x=14350, 5 x=19100.
+- Lettered grids along Y: A y=1250, B y=6000, C y=10750, D y=15500, E y=20250.
+- Grid lines extend at least 1500 beyond the building footprint on each side.
+
+2. Levels (top of slab)
+- Ground 0
+- Ground Floor +150 (slab 150)
+- First Floor +3450 (slab 200, underside +3250)
+- Roof Terrace +6750 (slab 200)
+- Solarium Top +9450 (top of the curved walls +9550)
+
+3. Pilotis
+- Round columns, diameter 190.
+- Ground floor, perimeter: every intersection on grids 1 and 5 (A to E), plus rows A and B on grids 2, 3, 4 (no column at B3).
+- Off-grid ground-floor columns: (8300, 6000), (10900, 6000) either side of the entrance, (4850, 8300), (8300, 8300), (8300, 12660), (14350, 13600), (8300, 17030), (9600, 20250).
+- No column at C3 (9600, 10750): the ramp is there.
+- First floor columns: A2, A3, A4, B2, B4, C5, D5, E3, plus (4850, 8300), (8300, 8300), (8300, 12660).
+
+4. Ground floor (+150)
+- Set-back volume: x 3050-16160, y ~4100-21500.
+- Curved U-shaped facade wall towards the entrance: centre (9605, 10750), outer radius 6555, thickness 200, height 3250. It continues with straight segments to the rear front (y 21500, rear wall x 4750-14460).
+- Curved entrance glazing on the same centre, radius ~6530, height 3100, in two segments: x 3060-8118 and x 11081-14046.
+- Entrance door: glazed, on the axis, x 8155-11045, at y 4700, up to +3250.
+- Rear ribbon window: x 5100-14110, from 1000 to 3100 above ground.
+- Interior partitions 100 thick, height 3100.
+
+5. First floor (+3450)
+- Outer box: x 0-19200, y 0-21500, wall thickness 200, height 3800 (from +3250 to +7050). It cantilevers about 1200 beyond grids A and E.
+- Ribbon windows: sill 1055 above the floor, height 1040.
+  - Front (y=0): continuous, x 205-18994.
+  - Rear (y=21500): continuous, x 206-18995.
+  - Left (x=0): 4 segments, y 1351-5892, 6102-10643, 10853-15394, 15604-20145.
+  - Right (x=19200): y 1355-5896; the rest of this side opens onto the terrace (unglazed openings at the same height).
+- Roof garden / terrace: the area x ~9700-19000, y ~6300-15400 (open to the sky).
+- Living room glazing onto the terrace: along y 6300, x 9701-18995, height 3090.
+- Terrace planter: low wall height 400, x 11490-14450, y 6300-15400.
+- Interior doors 1100 x 2100.
+- Rooms: living room (along the terrace), kitchen, bedrooms, bathrooms; name each room.
+
+6. Ramp (two side-by-side flights with a landing; repeated identically from the first floor to the roof terrace)
+- Flight 1 (up): x 9700-10800 (width 1100), from y 8390 to y 16930, from +150 to +1800.
+- Landing: x 8400-10800, y 16930-18210, at +1800.
+- Flight 2 (return): x 8400-9500 (width 1100), from y 16930 back to y 8390, from +1800 to +3450.
+- Spine wall between the flights: x 9550-9650, thickness 100.
+- First floor to roof terrace: same geometry, +3450 to +5100 to +6750.
+- Guardrails height 900.
+
+7. Stair
+- Footprint: x 5050-7450, y 8490-10290 (2400 x 1800).
+- Three straight flights with landings per storey, from the ground floor to the roof terrace.
+- At roof level, a cylindrical stair tower, radius 1000, centre (6551, 9390).
+
+8. Solarium (+6750)
+- Curved screen walls, height 2800 (up to +9550), thickness 100:
+  - centre (4431, 7819), radius 6295 (centre line)
+  - centre (4160, 4312), radius 2777 (centre line)
+  - centre (15070, 3050), radius 1950 (centre line)
+- Wall extents: x 1335-17055, y 1050-10390.
+- Planters height 400 along the curved walls.
+
+PHASES
+1. Levels and grids: levels with the names above; grids named 1-5 and A-E.
+2. Structure: pilotis, slabs of every level.
+3. Envelope and circulation: ground floor with the curved facade and glazing, first floor box with the ribbon windows, roof garden, ramp, stair, solarium curved walls.
+4. Rooms with name and area.
+5. Drawings:
+   - Plans of every level, dimensioned: chain of the grid spacings on two sides, overall dimensions, main openings along the perimeter; door and window tags.
+   - 2 sections: a longitudinal one along the ramp (x = 10250, from y -2000 to y 23500, looking west) and a cross section through the terrace and the living room (y = 10750, grid C, from x -2000 to x 21000, looking north).
+   - 4 elevations and a 3D axonometric view from the south-west (entrance side).
+   - Scale 1:100 for plans, sections and elevations.
+6. A0 landscape sheet: plans, the 2 sections, the 4 elevations and the 3D view laid out in an orderly, aligned way, each view titled, title block filled in (project "Villa Savoye", sheet number, scale).
+7. Export: PDF of the sheet, IFC of the model, native project file. Report the paths.
+8. Finally, open the A0 sheet view in the application window so it is on screen. If your tools cannot switch the active view, just say so in the report.
+
+FINAL REPORT
+A table: deliverable | done / partial / not done | notes. A list of the assumptions you made. Element count per category.
